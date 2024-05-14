@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100vh;
+  background-color: #f8fafc;
+}
+
+/* Root inherits body's height */
+/* Root contains memory card's container placed at the center of viewport */
+#root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  height: inherit;
+  width: inherit;
+}
+

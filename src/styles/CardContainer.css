@@ -1,12 +1,47 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 40px;
     height: 65%;
+    overflow-y: auto;
     width: 65%;
     border-radius: 10px;
     background-color: #ffffff;
     border: 2px solid #1d4ed8;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+main button {
+    height: 150px;
+    width: 150px;
+    background: none;
+    border: none;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;
+}
+
+main button:hover,
+main button:active {
+    transition: 0.2s;
+}
+
+main button:hover {
+    transform: scale(1.05);
+}
+
+main button:active {
+    transform: scale(0.99);
+}
+
+main button img {
+    object-fit: cover;
+    width: 70%;
+    height: 70%;  
 }
 
 .heading,
@@ -16,5 +51,11 @@ main {
     font-weight: 500;
     font-style: normal;
     color: black;
+}
+
+@media (max-width: 1750px) {
+    main {
+        height: auto;
+    }
 }
 

@@ -41,7 +41,7 @@ main button:active {
 main button img {
     object-fit: cover;
     width: 70%;
-    height: 70%;  
+    height: 70%;
 }
 
 .heading,
@@ -54,8 +54,59 @@ main button img {
 }
 
 @media (max-width: 1750px) {
+    body {
+        margin: 15px 0px 15px 0px;
+    }
     main {
         height: auto;
     }
 }
 
+.reset-btn {
+    align-items: center;
+    background-color: #06f;
+    border: 2px solid #06f;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-flex;
+    fill: #000;
+    font-family: Inter, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    height: 48px;
+    justify-content: center;
+    letter-spacing: -.8px;
+    line-height: 24px;
+    min-width: 140px;
+    outline: 0;
+    padding: 0 17px;
+    text-align: center;
+    text-decoration: none;
+    transition: all .3s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.reset-btn:focus {
+    color: #171e29;
+}
+
+.reset-btn:hover {
+    background-color: #3385ff;
+    border-color: #3385ff;
+    fill: #06f;
+}
+
+.reset-btn:active {
+    background-color: #3385ff;
+    border-color: #3385ff;
+    fill: #06f;
+}
+
+@media (min-width: 768px) {
+    .reset-btn {
+        min-width: 170px;
+    }
+}
